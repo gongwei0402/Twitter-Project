@@ -1,0 +1,6 @@
+<div class="flex justify-center align-middle" *ngIf="loading">
+  <app-loader></app-loader>
+</div>
+<ng-container *ngFor="let post of posts">
+  <app-post-items *ngIf="post" [post]="post" />
+</ng-container>
